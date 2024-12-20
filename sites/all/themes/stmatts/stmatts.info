@@ -1,0 +1,39 @@
+
+name = stmatts
+description = A flexible, recolorable theme with many regions.
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = styles/styles.css
+stylesheets[all][] = styles/bootstrap.min.css
+stylesheets[all][] = styles/animate.min.css
+
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/custom.js
+
+
+regions[mainmenu] = Main Menu
+regions[site_search] = Site Search
+regions[main_slider] = Main Slider
+regions[main_services_focus] = Main services
+regions[welcome] = Welcome Block
+regions[content] = Content
+regions[upcoming_events] = Upcoming Events
+regions[news_letters] = News Letters
+regions[timetable] = Timetable
+regions[livestreaming_block] = Live Streaming
+regions[latest_blog_articles] = Latest Blog Articles
+regions[offerings_section] = Offerings Section
+regions[subscribe_section] = Subscribe Section
+regions[find_us_section] = Find us Section
+regions[white_logo] = Footer Logo
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by Drupal.org packaging script on 2024-12-04
+version = "7.103"
+project = "drupal"
+datestamp = "1733324608"
