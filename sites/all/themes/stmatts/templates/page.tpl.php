@@ -63,10 +63,19 @@
         </section>
       <?php endif; ?>
 
+      <div class="main-title-wrap">
+              <div class="container text-center">
+                <?php if ($title): ?>
+                  <h1 class="title animate__animated animate__flipInY" id="page-title">
+                    <?php print $title; ?>
+                  </h1>
+                <?php endif; ?>
+              </div>
+            </div>
 
 
       <div class="container">
-        <div id="main-wrapper" class="clearfix">
+        <div id="main-wrapper" class="clearfix layout-content main-page-content">
 
           <?php if ($messages): ?>
             <div id="messages">
@@ -82,16 +91,10 @@
               <div id="breadcrumb"><?php print $breadcrumb; ?></div>
             <?php endif; ?>
 
-
-            <div id="content" class="column">
+            <div id="content" class="column layout-content main-page-content">
               <div class="section">
                 <a id="main-content"></a>
                 <?php print render($title_prefix); ?>
-                <?php if ($title): ?>
-                  <h1 class="title" id="page-title">
-                    <?php print $title; ?>
-                  </h1>
-                <?php endif; ?>
                 <?php print render($title_suffix); ?>
                 <?php if ($tabs): ?>
                   <div class="tabs">

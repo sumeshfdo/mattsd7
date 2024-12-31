@@ -186,7 +186,7 @@ section {
 
 .navbar-nav {
     .menu-block {
-        ul#superfish-main {
+        ul.sf-menu.sf-style-white {
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -201,6 +201,7 @@ section {
 
                 a {
                     text-decoration: none;
+                    border: none;
                     font-size: 16px;
                     color: $primary;
                     @include font-medium;
@@ -219,6 +220,8 @@ section {
                     .sf-sub-indicator {
                         right: 0;
                     }
+
+
                 }
 
                 &.active-trail {
@@ -239,11 +242,85 @@ section {
                     box-sizing: border-box;
                     border-bottom: 2px solid $secondary;
                 }
+
+                ul {
+                    background: $white;
+                    padding: 0px !important;
+                    border-radius: 0px;
+
+                    li {
+                        padding: 20px 15px;
+                        border-bottom: 1px solid $silver;
+                    }
+                }
             }
         }
 
     }
 }
+
+// .menu-block {
+//     ul#superfish-main {
+//         &.menu.sf-menu.sf-main.sf-style-white {
+//             li {
+//                 background: transparent;
+
+//                 ul {
+//                     width: 260px !important;
+
+//                     li {
+//                         background: $white;
+
+//                         a {
+//                             padding: 20px 15px;
+//                             border-bottom: 1px solid $silver;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     ul.sf-menu li:hover>ul,
+//     ul.sf-menu li.sfHover>ul {
+//         top: 55px;
+//     }
+
+//     ul#superfish-main li {
+//         a {
+//             text-decoration: none;
+//             font-size: 16px;
+//             color: $primary;
+//             font-weight: normal;
+//             transition: 0.3s ease-in;
+//             text-align: left;
+//         }
+
+//     }
+
+
+//     ul.sf-menu .sf-sub-indicator{
+//         background-image: none;
+//         &:after {
+//             font-family: "Material Symbols Outlined";
+//             content: "\e313";
+//             left: 0;
+//             line-height: 1;
+//             position: absolute;
+//             text-indent: 0;
+//             top: 4px;
+//             font-size: 10px;
+//             display: inline-block;
+//             transition: all .3s ease-in-out;
+//             -webkit-transition: all .3s ease-in-out;
+
+//             &:hover {
+//                 -webkit-transform: rotate(360deg);
+//                 transform: rotate(360deg);
+//             }
+//         }
+//     }
+// }
 
 .welcome-inner-wrap {
     // width: 839px;
@@ -410,7 +487,7 @@ input2 {
     }
 }
 
-span.file.file--mime-application-pdf.file--application-pdf a {
+.download-file a {
     background: $primary;
     border: none;
     border-radius: 27px;
@@ -932,51 +1009,51 @@ footer.contentinfo {
     // }
 }
 
-.path-frontpage {
-    .messages__wrapper {
-        display: none;
-    }
-}
+// .path-frontpage {
+//     .messages__wrapper {
+//         display: none;
+//     }
+// }
 
-.messages__wrapper {
-    .messages.messages--status {
-        background: $emerald-green;
-        padding: 1rem;
-        border-radius: 20px;
+
+.messages.status {
+    background: $emerald-green;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    color: $white;
+    font-size: 19px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    a.messageclose {
+        background: $white;
+        opacity: 1;
+        text-decoration: none;
+        font-size: 32px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        line-height: 22px;
         text-align: center;
+        font-weight: normal;
+    }
+
+
+    .placeholder {
+        display: inline-block;
+        cursor: default;
+        background-color: transparent;
+        opacity: 1;
+        color: $white;
+        font-style: normal;
         color: $white;
         font-size: 19px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-        a.messageclose {
-            background: $white;
-            opacity: 1;
-            text-decoration: none;
-            font-size: 32px;
-            padding: 5px;
-            width: 30px;
-            height: 30px;
-            box-sizing: border-box;
-            border-radius: 50%;
-            line-height: 22px;
-            text-align: center;
-            font-weight: normal;
-        }
-
-
-        .placeholder {
-            display: inline-block;
-            cursor: default;
-            background-color: transparent;
-            opacity: 1;
-            color: $white;
-            font-style: normal;
-            color: $white;
-            font-size: 19px;
-        }
     }
 }
+
 
 .activities-outter-wrap {
     .card {
@@ -1022,84 +1099,6 @@ footer.contentinfo {
                     color: $primary;
                 }
             }
-        }
-    }
-}
-
-.menu-block {
-    ul#superfish-main {
-        &.menu.sf-menu.sf-main.sf-style-white {
-            li {
-                background: transparent;
-
-                ul {
-                    width: 260px !important;
-
-                    li {
-                        background: $white;
-
-                        a {
-                            padding: 20px 15px;
-                            border-bottom: 1px solid $silver;
-                        }
-                    }
-                }
-
-                // &:last-child {
-                //     background: $error;
-                //     color: $white;
-                //     border-radius: 5px !important;
-
-
-                //     a.sf-depth-1 {
-                //         color: $white !important;
-
-                //     }
-                // }
-            }
-        }
-    }
-
-    ul.sf-menu li:hover>ul,
-    ul.sf-menu li.sfHover>ul {
-        top: 55px;
-    }
-
-    ul#superfish-main li {
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            color: $primary;
-            font-weight: normal;
-            transition: 0.3s ease-in;
-            text-align: left;
-        }
-
-        // &:last-child {
-        //     a.sf-depth-1 {
-        //         color: $white !important;
-
-        //     }
-        // }
-    }
-
-
-    ul.sf-menu .sf-sub-indicator:after {
-        font-family: "Material Symbols Outlined";
-        content: "\e313";
-        left: 0;
-        line-height: 1;
-        position: absolute;
-        text-indent: 0;
-        top: 4px;
-        font-size: 10px;
-        display: inline-block;
-        transition: all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-
-        &:hover {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
         }
     }
 }
@@ -1328,6 +1327,8 @@ body.path-not-frontpage-search {
             }
         }
 
+
+
     }
 
     .event-details-view {
@@ -1335,6 +1336,13 @@ body.path-not-frontpage-search {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.event-view-btn {
+    a {
+        text-decoration: none;
+        @include btn-common-mixin ($primary, $secondary, $secondary);
     }
 }
 
@@ -1876,5 +1884,34 @@ input.button.button--primary,
                 }
             }
         }
+    }
+}
+
+
+.not-front {
+    .main-title-wrap {
+        min-height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./../images/pg-header-bg.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+
+        h1 {
+            margin-bottom: 0;
+            font-size: 40px;
+            @include font-bold;
+            text-shadow: 0px 1px 0px $white;
+            color: $primary;
+        }
+    }
+
+    .layout-content.main-page-content {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }

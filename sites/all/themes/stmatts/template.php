@@ -3,10 +3,13 @@
 /**
  * Add body classes if certain regions have content.
  */
-function stmatts_preprocess_html(&$variables) {
+
+ function stmatts_preprocess_html(&$variables) {
   if (!empty($variables['page']['featured'])) {
     $variables['classes_array'][] = 'featured';
   }
+
+  drupal_add_css('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined', array('type' => 'external'));
 
   if (!empty($variables['page']['triptych_first'])
     || !empty($variables['page']['triptych_middle'])
