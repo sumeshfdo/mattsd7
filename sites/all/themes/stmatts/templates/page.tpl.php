@@ -112,8 +112,18 @@
             </div>
           </div>
         </div>
-
       </div>
+
+      <?php if ($page['related_articles']): ?>
+        <div class="related-articles-wrap">
+          <div class="container p-5">
+            <div class="row">
+              <?php print render($page['related_articles']); ?>
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
+
 
       <?php if ($page['upcoming_events'] || $page['news_letters']) { ?>
         <section class="events-section">

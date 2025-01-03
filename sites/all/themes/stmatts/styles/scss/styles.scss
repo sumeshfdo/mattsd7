@@ -249,8 +249,13 @@ section {
                     border-radius: 0px;
 
                     li {
-                        padding: 20px 15px;
+                        padding: 0px;
                         border-bottom: 1px solid $silver;
+
+                        a {
+                            padding: 20px 1.5em;
+                            box-sizing: border-box;
+                        }
                     }
                 }
             }
@@ -1094,7 +1099,7 @@ footer.contentinfo {
             h5.card-title {
                 a {
                     text-decoration: none;
-                    font-size: 19px;
+                    font-size: 17px;
                     @include font-regular;
                     color: $primary;
                 }
@@ -1421,42 +1426,48 @@ nav.pager {
 
 
 .html-tabs-wrapper {
-    ul.quicktabs-tabs {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        border: none;
+    .quicktabs-wrapper.quicktabs-style-basic {
+        ul.quicktabs-tabs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: auto;
 
-        li {
-            padding: 0px;
+            li {
+                padding: 0px !important;
+                position: relative;
+                bottom: -1px;
+                // border-top-left-radius: .25rem;
+                // border-top-right-radius: .25rem;    
+            }
         }
-    }
 
-    .tabsbar .quicktabs-main {
-        padding: 15px;
-        border: 1px solid $silver;
-    }
+        .quicktabs-main {
+            padding: 15px;
+            border: 1px solid $silver !important;
+        }
 
-    .tabsbar .quicktabs-tabs>li.active>a,
-    .tabsbar .quicktabs-tabs>li.active>a:hover,
-    .tabsbar .quicktabs-tabs>li.active>a:focus {
-        color: $greensea;
-        background-color: $white;
-        border-color: $silver $silver $white;
-        text-decoration: none;
-    }
+        .quicktabs-tabs>li.active>a,
+        .quicktabs-tabs>li.active>a:hover,
+        .quicktabs-tabs>li.active>a:focus {
+            color: $greensea;
+            background-color: $white;
+            border-color: $silver $silver $white;
+            text-decoration: none;
+        }
 
-    .tabsbar .quicktabs-tabs>li>a {
-        border: 1px solid transparent;
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem;
-        display: block;
-        padding: .5rem 1rem;
-        text-decoration: none;
-        color: $asbestos;
+        .quicktabs-tabs>li>a {
+            border: none !important;
+            display: block;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            color: $asbestos;
+            @include font-regular;
+            font-size: 18px !important;
+        }
     }
 }
 

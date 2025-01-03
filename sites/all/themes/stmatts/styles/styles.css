@@ -250,8 +250,12 @@ section {
   border-radius: 0px;
 }
 .navbar-nav .menu-block ul.sf-menu.sf-style-white li ul li {
-  padding: 20px 15px;
+  padding: 0px;
   border-bottom: 1px solid #bdc3c7;
+}
+.navbar-nav .menu-block ul.sf-menu.sf-style-white li ul li a {
+  padding: 20px 1.5em;
+  box-sizing: border-box;
 }
 
 .welcome-inner-wrap {
@@ -997,7 +1001,7 @@ footer.contentinfo .logoarea-white img {
 }
 .activities-outter-wrap .card .card-body h5.card-title a {
   text-decoration: none;
-  font-size: 19px;
+  font-size: 17px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
   color: #252C6A;
@@ -1322,38 +1326,41 @@ nav.pager ul li.pager__item.is-active a:hover {
   color: #ffffff;
 }
 
-.html-tabs-wrapper ul.quicktabs-tabs {
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic ul.quicktabs-tabs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0;
-  border: none;
+  height: auto;
 }
-.html-tabs-wrapper ul.quicktabs-tabs li {
-  padding: 0px;
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic ul.quicktabs-tabs li {
+  padding: 0px !important;
+  position: relative;
+  bottom: -1px;
 }
-.html-tabs-wrapper .tabsbar .quicktabs-main {
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-main {
   padding: 15px;
-  border: 1px solid #bdc3c7;
+  border: 1px solid #bdc3c7 !important;
 }
-.html-tabs-wrapper .tabsbar .quicktabs-tabs > li.active > a,
-.html-tabs-wrapper .tabsbar .quicktabs-tabs > li.active > a:hover,
-.html-tabs-wrapper .tabsbar .quicktabs-tabs > li.active > a:focus {
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-tabs > li.active > a,
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-tabs > li.active > a:hover,
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-tabs > li.active > a:focus {
   color: #16a085;
   background-color: #ffffff;
   border-color: #bdc3c7 #bdc3c7 #ffffff;
   text-decoration: none;
 }
-.html-tabs-wrapper .tabsbar .quicktabs-tabs > li > a {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+.html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-tabs > li > a {
+  border: none !important;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
   color: #7f8c8d;
+  font-family: "Poppins-Regular", sans-serif !important;
+  font-weight: normal !important;
+  font-size: 18px !important;
 }
 
 .bank-details-wrapper {

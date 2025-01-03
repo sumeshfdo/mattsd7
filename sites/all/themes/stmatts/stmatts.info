@@ -20,6 +20,7 @@ regions[main_slider] = Main Slider
 regions[main_services_focus] = Main services
 regions[welcome] = Welcome Block
 regions[content] = Content
+regions[related_articles] = Related Articles
 regions[upcoming_events] = Upcoming Events
 regions[news_letters] = News Letters
 regions[timetable] = Timetable
