@@ -64,18 +64,18 @@
       <?php endif; ?>
 
       <div class="main-title-wrap">
-              <div class="container text-center">
-                <?php if ($title): ?>
-                  <h1 class="title animate__animated animate__flipInY" id="page-title">
-                    <?php print $title; ?>
-                  </h1>
-                <?php endif; ?>
-              </div>
-            </div>
+        <div class="container text-center">
+          <?php if ($title): ?>
+            <h1 class="title animate__animated animate__flipInY" id="page-title">
+              <?php print $title; ?>
+            </h1>
+          <?php endif; ?>
+        </div>
+      </div>
 
 
       <div class="container">
-        <div id="main-wrapper" class="clearfix layout-content main-page-content">
+        <div id="main" class="clearfix layout-content main-page-content">
 
           <?php if ($messages): ?>
             <div id="messages">

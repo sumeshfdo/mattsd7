@@ -1,0 +1,14 @@
+name = Blog Subscriptions UI
+description = Provides a separate blogs subscriptions page.
+package = "Subscriptions"
+
+dependencies[] = subscriptions_content
+dependencies[] = blog
+
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2021-08-09
+version = "7.x-1.4"
+core = "7.x"
+project = "subscriptions"
+datestamp = "1628551886"
