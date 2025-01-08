@@ -602,26 +602,39 @@ div#block-matts-primary-local-tasks ul {
             }
         }
 
-        div#edit-actions input {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 2;
-
-            background: $primary;
-            border: none;
-            color: $white;
-            border-radius: 50px;
-            box-sizing: border-box;
-            width: 80px;
-            height: 40px;
+        .form-actions.form-wrapper {
             // &:before {
             //     content: "\e8b6";
-            //     font-family: 'Material Symbols Outlined';
-            //     color: pink;
-            //     font-size: 16px;
-            //     display: inline-block;
+            //     font-family: "Material Symbols Outlined";
+            //     color: $white;
+            //     font-size: 25px;
+            //     position: absolute;
+            //     z-index: 3333;
+            //     width: 30px;
+            //     height: 30px;
+            //     right: 6px;
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: flex-end;
+            //     align-items: center;
+            //     top: 5px;
             // }
+
+            input[type=submit] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+
+                background: $primary;
+                border: none;
+                color: $white;
+                border-radius: 50px;
+                box-sizing: border-box;
+                width: 80px;
+                height: 40px;
+                // text-indent: -9999px;
+            }
         }
     }
 }
@@ -1013,45 +1026,46 @@ footer.contentinfo {
 //     }
 // }
 
+#messages {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 33;
+    width: 45%;
 
-.messages.status {
-    background: $emerald-green;
-    padding: 1rem;
-    border-radius: 20px;
-    text-align: center;
-    color: $white;
-    font-size: 19px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    .messages {
+        &.status {
+            background: $emerald-green;
+            color: $white;
+            @include message-common;
 
-    a.messageclose {
-        background: $white;
-        opacity: 1;
-        text-decoration: none;
-        font-size: 32px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        box-sizing: border-box;
-        border-radius: 50%;
-        line-height: 22px;
-        text-align: center;
-        font-weight: normal;
-    }
+            a.messageclose {
+                @include messageclose;
+                color: $greensea !important;
+            }
 
+            .placeholder {
+                @include placeholder;
+            }
+        }
 
-    .placeholder {
-        display: inline-block;
-        cursor: default;
-        background-color: transparent;
-        opacity: 1;
-        color: $white;
-        font-style: normal;
-        color: $white;
-        font-size: 19px;
+        &.error {
+            background: $error-alert-bg;
+            color: $error-alert-color;
+            @include message-common;
+
+            a.messageclose {
+                @include messageclose;
+                color: $error-alert-color !important;
+            }
+
+            .placeholder {
+                @include placeholder;
+            }
+        }
     }
 }
-
 
 .activities-outter-wrap {
     .card {
@@ -1123,141 +1137,6 @@ footer.contentinfo {
         padding: 12px;
         border-radius: 16px;
     }
-}
-
-body.path-not-frontpage-search {
-    form#search-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        gap: 10px;
-        background: $clouds;
-        padding: 20px;
-        border-radius: 50px;
-
-        div#edit-basic {
-            position: relative;
-            width: 100%;
-
-            .js-form-item.form-item.form-type-search.js-form-type-search.form-item-keys.js-form-item-keys {
-                width: 100%;
-            }
-
-            input#edit-keys {
-                padding: 16px;
-                border: 1px solid $silver;
-                border-radius: 50px;
-                width: 100%;
-                font-size: 18px;
-                height: 60px;
-                box-sizing: border-box;
-                transition: 0.3s ease;
-
-                &:active,
-                &:focus {
-                    border: 1px solid $secondary;
-                    outline: none !important;
-                }
-            }
-
-            input#edit-submit {
-                position: absolute;
-                right: 0;
-                top: 0px;
-                padding: 15px;
-                border: none;
-                color: $white;
-                background: $primary;
-                border-radius: 50px;
-                height: 60px;
-                box-sizing: border-box;
-                border: 1px solid $primary;
-            }
-
-            label {
-                display: none !important;
-            }
-
-        }
-
-        a#edit-help-link {
-            display: none !important;
-        }
-    }
-
-    h2 {
-        @include font-semibold;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: block;
-
-    }
-
-    .item-list {
-        border: 1px solid $silver;
-        padding: 30px 30px 30px 40px;
-        border-radius: 16px;
-        margin-bottom: 100px;
-
-        ol {
-            padding-left: 0px !important;
-            margin-bottom: 0px;
-
-            li {
-                background-color: $clouds-light;
-                margin-bottom: 10px;
-                border-radius: 10px;
-
-                // &:nth-child(odd) {
-                //     background-color: $clouds-light;
-                // }
-
-                &:last-child {
-                    margin-bottom: 0px;
-                }
-
-                &::marker {
-                    font-size: 14px;
-                }
-
-                h3.title {
-                    margin-bottom: 0px;
-
-                    a {
-                        font-size: 19px;
-                        text-decoration: none;
-                        padding: 15px;
-                        color: $secondary;
-                        display: block;
-                    }
-                }
-
-                .search-snippet-info {
-                    border-top: 1px solid $secondary;
-                    padding: 15px;
-
-                    p.search-snippet {
-                        margin-bottom: 0px;
-
-                        strong {
-                            color: $white;
-                            background: $secondary;
-                            padding: 3px 5px;
-                            border-radius: 3px;
-                        }
-                    }
-
-                    p.search-info {
-                        display: none !important;
-                    }
-                }
-            }
-        }
-    }
-
 }
 
 .event-update-wrap {
@@ -1690,46 +1569,6 @@ input#edit-captcha-response {
     }
 }
 
-.contactus-webform-wrapper {
-    .js-form-item.form-item {
-        margin-bottom: 15px;
-
-        label {
-            display: block;
-            @include font-medium;
-        }
-
-        input.form-text,
-        select#edit-enquiry-type,
-        input#edit-e-mail-address,
-        textarea#edit-message {
-            border: 1px solid $asbestos;
-            padding: 10px;
-            font-size: 18px;
-            color: $black;
-            border-radius: 0px;
-            width: 100%;
-            transition: 0.3s ease;
-
-            &:active,
-            &:focus-visible {
-                outline: none;
-                border: 1px solid $secondary;
-                box-shadow: none;
-            }
-        }
-    }
-
-    .form-actions.webform-actions {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px;
-        margin-top: 80px;
-    }
-}
-
 input.btn-outlined {
     @include btn-outlined-mixin;
 }
@@ -2060,4 +1899,195 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form {
         width: 100%;
         height: auto;
     }
+}
+
+.webform-client-form.webform-client-form-32 {
+    .form-item.webform-component {
+        label {
+            display: block;
+            @include font-medium;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 1px solid $asbestos;
+            padding: 10px;
+            font-size: 18px;
+            color: $black;
+            border-radius: 0px;
+            width: 100%;
+            transition: 0.3s ease;
+
+            &:active,
+            &:focus-visible {
+                outline: none;
+                border: 1px solid $secondary;
+                box-shadow: none;
+            }
+        }
+
+        textarea {
+            max-height: 137px;
+            resize: none;
+        }
+
+    }
+
+    .form-actions {
+        text-align: center;
+        margin-top: 50px
+    }
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    @include btn-submit-mixin;
+}
+
+
+.page-search {
+    form#search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 10px;
+        background: $clouds;
+        padding: 20px;
+        border-radius: 50px;
+
+        div {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+
+            .container-inline.form-wrapper {
+                .form-item.form-type-textfield.form-item-keys {
+                    display: block;
+                }
+
+                input#edit-keys {
+                    padding: 16px;
+                    border: 1px solid $silver;
+                    border-radius: 50px;
+                    width: 100%;
+                    font-size: 18px;
+                    height: 60px;
+                    box-sizing: border-box;
+                    transition: 0.3s ease;
+
+                    &:active,
+                    &:focus {
+                        border: 1px solid $secondary;
+                        outline: none !important;
+                    }
+                }
+
+                input#edit-submit {
+                    position: absolute;
+                    right: 0;
+                    top: 0px;
+                    padding: 15px;
+                    border: none;
+                    color: $white;
+                    background: $primary;
+                    border-radius: 50px;
+                    height: 60px;
+                    box-sizing: border-box;
+                    border: 1px solid $primary;
+                }
+
+                // label {
+                //     display: none !important;
+                // }
+                label {
+                    position: absolute;
+                    top: -50px;
+                    width: 100%;
+                    text-align: center;
+                    @include font-regular;
+                    color: $primary;
+                }
+            }
+
+        }
+
+        a#edit-help-link {
+            display: none !important;
+        }
+
+        fieldset#edit-advanced {
+            display: none;
+        }
+    }
+
+    h2 {
+        @include font-medium;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+        text-align: center;
+        color: $primary;
+    }
+
+
+    ol.search-results.node-results {
+        padding-left: 0px !important;
+        margin-bottom: 0px;
+
+        li {
+            background-color: $clouds-light;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+            // &:nth-child(odd) {
+            //     background-color: $clouds-light;
+            // }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &::marker {
+                font-size: 14px;
+            }
+
+            h3.title {
+                margin-bottom: 0px;
+
+                a {
+                    font-size: 19px;
+                    text-decoration: none;
+                    padding: 15px;
+                    color: $secondary;
+                    display: block;
+                }
+            }
+
+            .search-snippet-info {
+                border-top: 1px solid $secondary;
+                padding: 15px;
+
+                p.search-snippet {
+                    margin-bottom: 0px;
+
+                    strong {
+                        color: $white;
+                        background: $secondary;
+                        padding: 3px 5px;
+                        border-radius: 3px;
+                    }
+                }
+
+                p.search-info {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
 }

@@ -6,6 +6,7 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = styles/styles.css
+stylesheets[all][] = styles/responsive.css
 stylesheets[all][] = styles/bootstrap.min.css
 stylesheets[all][] = styles/animate.min.css
 

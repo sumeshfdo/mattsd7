@@ -64,6 +64,9 @@
 /* New mediaqueries for 2023 */
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  #messages {
+    width: 70%;
+  }
   body.path-not-frontpage-user section.ftco-section .login-wrap,
   body.path-not-frontpage-user section.ftco-section .text-wrap {
     width: 100%;
@@ -71,6 +74,9 @@
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  #messages {
+    width: 90%;
+  }
   body.path-not-frontpage-user section.ftco-section .login-wrap,
   body.path-not-frontpage-user section.ftco-section .text-wrap {
     width: 100%;

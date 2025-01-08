@@ -192,3 +192,43 @@
         @include font-regular;
     }
 }
+
+@mixin messageclose {
+    background: rgba(255, 255, 255, .6);
+    opacity: 1;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    line-height: 22px;
+    text-align: center;
+    font-weight: normal;
+}
+
+@mixin placeholder {
+    display: inline-block;
+    cursor: default;
+    background-color: transparent;
+    opacity: 1;
+    color: $white;
+    font-style: normal;
+    color: $white;
+    font-size: 19px;
+}
+
+@mixin message-common {
+    padding: 1rem;
+    border-radius: 20px;
+    // text-align: center;
+    font-size: 19px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}

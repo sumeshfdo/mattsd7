@@ -2,10 +2,7 @@
 ?>
 <div id="page-wrapper">
   <div id="page">
-
-
     <div id="main-layout" class="layout-container">
-
       <div class="slide-show-wrapper">
         <div class="stickey-header-wrapper">
           <div class="logo-wrap p-3 mb-2">
@@ -79,7 +76,7 @@
 
           <?php if ($messages): ?>
             <div id="messages">
-              <div class="section clearfix">
+              <div class="animate__animated animate__rubberBand section clearfix">
                 <?php print $messages; ?>
               </div>
             </div>
