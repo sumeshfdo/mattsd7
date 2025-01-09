@@ -6,7 +6,7 @@
 
 jQuery(window).load(function(){
 
-    // jQuery("#top-nav").sticky({ topSpacing: 0 });
+     jQuery("#main-nav-bar").sticky({ topSpacing: 0 });
 
   });
   
