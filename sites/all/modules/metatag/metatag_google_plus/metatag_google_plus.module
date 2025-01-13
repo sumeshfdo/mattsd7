@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * @file
+ * Empty file for Metatag:Google+ because otherwise the module can't uninstall.
+ */
