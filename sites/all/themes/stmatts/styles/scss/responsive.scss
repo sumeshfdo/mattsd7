@@ -6,7 +6,9 @@
 /* New mediaqueries for 2023 */
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+    form#mailchimp-signup-subscribe-block-get-in-touch-form {
+        width: 80%;
+    }
     #messages {
         width: 70%;
     }
@@ -16,10 +18,121 @@
 
         width: 100%;
     }
+
+    section.outter-padding2.welcome-section {
+        padding-top: 0;
+    }
+
+    .slide-show-wrapper .main-slider .flexslider .flex-control-nav {
+        bottom: 0;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap {
+        position: relative;
+        top: 0px !important;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap .main-services-widget {
+        border: 5px solid #ffffff;
+        box-shadow: 0 3px 4px #ddd;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-icon img {
+        width: 40px;
+    }
+
+    .service-type {
+        font-size: 15px;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-description .service-name {
+        font-size: 16px;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-time .service-time {
+        font-size: 21px;
+    }
+
+    .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-time .service-am-pm {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 27px !important;
+    }
+
+    .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-title {
+        font-size: 20px;
+    }
+
+    .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-type {
+        font-size: 16px;
+    }
+
+    // .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-time .all-worship-hrs {
+    //     font-size: 20px;
+    // }
+
+    .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-time .all-worshipam-pm {
+        font-size: 13px;
+    }
+
+
+    section.livestreaming-section .title-1 h3,
+    section.livestreaming-section .title-2 h3 {
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+
+    section.livestreaming-section .social-ico-wrap .social-ico.fb a,
+    section.livestreaming-section .social-ico-wrap .social-ico.yt a {
+        width: 85px;
+        height: 85px;
+    }
+
+    section.offering-section .main-title {
+        font-size: 36px;
+    }
+
+    section.livestreaming-section .social-ico-wrap {
+        margin-top: 40px;
+    }
+
+    .social-desc-wrap {
+        text-align: center;
+    }
+
+    .view.view-newsletter-download.view-id-newsletter_download.view-display-id-block {
+        margin-top: 50px;
+    }
+
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-title {
+        font-size: 16px;
+    }
+    .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-type {
+        font-size: 13px;
+    }
+    form#mailchimp-signup-subscribe-block-get-in-touch-form {
+        width: 90%;
+    }
+    .event-update-wrap {
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .not-front .main-title-wrap h1 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
     .livestreaming-section-wrap {
         text-align: center;
 
@@ -39,151 +152,334 @@
         width: 100%;
     }
 
-    // responsive menu start
+    .view-main-worship-hours {
+        ul {
+            li {
+                margin-bottom: 10px;
 
-    ul.sf-menu.sf-style-white li:hover,
-    ul.sf-menu.sf-style-white li.sfHover,
-    ul.sf-menu.sf-style-white a:hover,
-    ul.sf-menu.sf-style-white span.nolink:hover {
-        background: #ecf0f1;
-        outline: 0;
-    }
-
-    ul.sf-menu.sf-style-white a,
-    ul.sf-menu.sf-style-white a:visited,
-    ul.sf-menu.sf-style-white span.nolink {
-        color: $primary;
-    }
-
-    ul.sf-menu.sf-style-white a.is-active,
-    ul.sf-menu.sf-style-white a:focus {
-        background: $primary !important;
-        color: $white;
-        padding: 1.25em 1em;
-    }
-
-    .menu-block ul.sf-menu .sf-sub-indicator:after {
-        font-size: 18px;
-    }
-
-    .sf-accordion-toggle.sf-style-white {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-    }
-
-    div.sf-accordion-toggle.sf-style-white a {
-        background: $white;
-        border: none;
-        color: $primary;
-        display: block;
-        font-weight: bold;
-        padding: 0px;
-        position: relative;
-        text-align: center;
-        border-radius: 6px;
-        width: 50px;
-        height: 50px;
-        box-sizing: border-box;
-
-        &.sf-expanded {
-            background: $clouds-light;
-            color: $primary;
-            border: none;
-        }
-    }
-
-    div.sf-accordion-toggle {
-        transition: 0.3s ease-in-out;
-
-        &.sf-style-white>a:after {
-            font-family: "Material Symbols Outlined";
-            content: "\e5d2";
-            font-size: 2em;
-            position: absolute !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            width: 100%;
-        }
-
-        &.sf-style-white>a.sf-expanded:after {
-            font-family: "Material Symbols Outlined";
-            content: "\e5cd";
-            font-size: 2em;
-            position: absolute !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            width: 100%;
-        }
-    }
-
-    ul#superfish-main-accordion.menu.sf-menu.sf-accordion.sf-expanded {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: flex-start;
-        // align-items: center;
-        float: none;
-        margin: 0;
-        border: 1px solid $silver;
-        margin-top: 15px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0px 3px 5px 1px $clouds;
-        position: relative;
-        // &:after{
-        //     content: " ";
-        //     position: absolute;
-        //     width: 0; 
-        //     height: 0; 
-        //     border-left: 7px solid transparent;
-        //     border-right: 7px solid transparent;
-        //     border-bottom: 10px solid black;
-        //     top: 0;
-        //     right: 0;
-        //     z-index: 2;
-        //     visibility: visible !important;
-        // }
-
-
-        li {
-            text-align: left;
-            background: $white !important;
-            border-bottom: 1px solid $silver;
-            box-sizing: border-box;
-
-            &:last-child {
-                border-bottom: none;
+                .main-services-widget {
+                    box-shadow: 0 4px 5px #ddd;
+                }
             }
+        }
+    }
 
-            a {
-                text-decoration: none;
-                padding: 1.25em 1em;
-            }
 
-            ul.sf-has-clone-parent {
-                li {
-                    border: none !important;
-                    transition: 0.3s ease;
+    .slide-show-wrapper {
+        .main-slider {
+            .flexslider {
+                .flex-control-nav {
+                    bottom: 0 !important;
+                }
 
+                .flex-direction-nav {
                     a {
-                        background: $white;
-                        border: none !important;
+                        width: 45px !important;
+                        height: 45px !important;
 
-                        &:hover {
-                            background: $clouds-light;
+                        &:before {
+                            font-size: 30px !important;
                         }
-                    }
-
-                    &:hover {
-                        background: $clouds-light;
                     }
                 }
             }
         }
     }
+
+    // responsive menu start D7
+    .menu-block {
+        display: block;
+        min-width: 100%;
+
+        .region.region-mainmenu {
+            clear: both;
+
+
+            ul#superfish-1-accordion {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+                border: 1px solid #ddd;
+
+                &.sf-accordion.sf-expanded {
+                    animation: Horizontal-Left .5s ease 0s 1 normal forwards;
+                }
+
+                &.sf-accordion.sf-hidden {
+                    animation: fadeout-top 1s ease 0s 1 normal forwards;
+                }
+
+                li {
+                    text-align: left;
+                    background: $white;
+                    border-bottom: 1px solid $silver;
+                    box-sizing: border-box;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    a {
+                        color: $primary;
+                        text-decoration: none;
+                        padding: 1.25em 1em;
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        &:visited {
+                            color: $primary;
+                        }
+
+                        &.is-active,
+                        &:focus {
+                            background: $primary;
+                            color: $white;
+                            padding: 1.25em 1em;
+
+                        }
+                    }
+
+                    ul {
+                        li.active-trail {
+                            // border: none !important;
+                            transition: 0.3s ease;
+
+                            a {
+                                background: $white;
+                                border: none !important;
+
+                                &:hover {
+                                    background: $clouds-light;
+                                }
+                            }
+
+                            a.active {
+                                background: $secondary;
+                                color: $white;
+
+                                &:hover {
+                                    background: $primary;
+                                }
+                            }
+
+                            &:hover {
+                                background: $primary !important;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    &:hover,
+                    &:hover {
+                        background: $clouds;
+                        outline: 0;
+                    }
+
+                    &.menuparent {
+
+                        a.menuparent.sf-with-ul {
+                            &:after {
+                                content: "\e69b";
+                                font-family: "Material Symbols Outlined";
+                                font-size: 1em;
+                            }
+                        }
+                    }
+
+                    &.menuparent.sf-expanded {
+
+                        a.menuparent.sf-with-ul {
+                            &:after {
+                                content: "\e316";
+                                font-family: "Material Symbols Outlined";
+                                font-size: 1em;
+                            }
+                        }
+
+                        ul {
+                            border: 1px solid $primary;
+                        }
+                    }
+
+                    &.active-trail {
+                        a.menuparent {
+                            background: $primary !important;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sf-accordion-toggle.sf-style-white {
+            text-align: left;
+
+            a#superfish-1-toggle {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                background: $white;
+
+
+
+                span {
+                    display: none;
+                }
+
+                &:after {
+                    font-family: "Material Symbols Outlined";
+                    content: "\e5d2";
+                    font-size: 2em;
+
+                }
+
+                &.sf-expanded {
+                    &:after {
+                        font-family: "Material Symbols Outlined";
+                        content: "\e5cd";
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // responsive menu start
+
+    // ul.sf-menu.sf-style-white li:hover,
+    // ul.sf-menu.sf-style-white li.sfHover,
+    // ul.sf-menu.sf-style-white a:hover,
+    // ul.sf-menu.sf-style-white span.nolink:hover {
+    //     background: $clouds;
+    //     outline: 0;
+    // }
+
+    // ul.sf-menu.sf-style-white a,
+    // ul.sf-menu.sf-style-white a:visited,
+    // ul.sf-menu.sf-style-white span.nolink {
+    //     color: $primary;
+    // }
+
+    // ul.sf-menu.sf-style-white a.is-active,
+    // ul.sf-menu.sf-style-white a:focus {
+    //     background: $primary !important;
+    //     color: $white;
+    //     padding: 1.25em 1em;
+    // }
+
+    // .menu-block ul.sf-menu .sf-sub-indicator:after {
+    //     font-size: 18px;
+    // }
+
+    // .sf-accordion-toggle.sf-style-white {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: flex-end;
+
+    // }
+
+    // div.sf-accordion-toggle.sf-style-white a {
+    //     background: $white;
+    //     border: none;
+    //     color: $primary;
+    //     display: block;
+    //     font-weight: bold;
+    //     padding: 0px;
+    //     position: relative;
+    //     text-align: center;
+    //     border-radius: 6px;
+    //     width: 50px;
+    //     height: 50px;
+    //     box-sizing: border-box;
+
+    //     &.sf-expanded {
+    //         background: $clouds-light;
+    //         color: $primary;
+    //         border: none;
+    //     }
+    // }
+
+    // div.sf-accordion-toggle {
+    //     transition: 0.3s ease-in-out;
+
+    //     &.sf-style-white>a:after {
+    //         font-family: "Material Symbols Outlined";
+    //         content: "\e5d2";
+    //         font-size: 2em;
+    //         position: absolute !important;
+    //         top: 50% !important;
+    //         left: 50% !important;
+    //         transform: translate(-50%, -50%) !important;
+    //         width: 100%;
+    //     }
+
+    //     &.sf-style-white>a.sf-expanded:after {
+    //         font-family: "Material Symbols Outlined";
+    //         content: "\e5cd";
+    //         font-size: 2em;
+    //         position: absolute !important;
+    //         top: 50% !important;
+    //         left: 50% !important;
+    //         transform: translate(-50%, -50%) !important;
+    //         width: 100%;
+    //     }
+    // }
+
+    // ul#superfish-main-accordion.menu.sf-menu.sf-accordion.sf-expanded {
+    //     float: none;
+    //     margin: 0;
+    //     border: 1px solid $silver;
+    //     margin-top: 15px;
+    //     border-radius: 20px;
+    //     overflow: hidden;
+    //     box-shadow: 0px 3px 5px 1px $clouds;
+    //     position: relative;
+
+    //     li {
+    //         text-align: left;
+    //         background: $white !important;
+    //         border-bottom: 1px solid $silver;
+    //         box-sizing: border-box;
+
+    //         &:last-child {
+    //             border-bottom: none;
+    //         }
+
+    //         a {
+    //             text-decoration: none;
+    //             padding: 1.25em 1em;
+    //         }
+
+    //         ul.sf-has-clone-parent {
+    //             li {
+    //                 border: none !important;
+    //                 transition: 0.3s ease;
+
+    //                 a {
+    //                     background: $white;
+    //                     border: none !important;
+
+    //                     &:hover {
+    //                         background: $clouds-light;
+    //                     }
+    //                 }
+
+    //                 &:hover {
+    //                     background: $clouds-light;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
     // responsive menu ends
 

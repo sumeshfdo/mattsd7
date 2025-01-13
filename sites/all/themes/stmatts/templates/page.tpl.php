@@ -12,22 +12,26 @@
               </a>
             <?php endif; ?>
           </div>
-          <div class="container-fluid stickey-nav-wrap">
-            <div id="main-nav-bar" class="nav-bar-wrap p-3 d-lg-flex">
-              <div class="navbar-brand col-lg-2 me-0"></div>
-              <div class="navbar-nav col-lg-8 justify-content-lg-center2">
-                <?php if ($page['mainmenu']): ?>
-                  <div class="menu-block">
-                    <?php print render($page['mainmenu']); ?>
-                  </div>
-                <?php endif; ?>
-              </div>
-              <div class="d-lg-flex2 col-lg-2 justify-content-lg-end">
-                <?php if ($page['site_search']): ?>
-                  <div class="search-block">
-                    <?php print render($page['site_search']); ?>
-                  </div>
-                <?php endif; ?>
+          <div id="main-nav-bar" class="stickey-nav-wrap">
+            <div class="container-xl">
+              <div class="nav-bar-wrap p-3 d-lg-flex justify-content-center">
+                <?php /*<div class="navbar-brand col-12 col-md-12 col-lg-2 me-0"></div>*/ ?>
+                <div class="navbar-nav col-12 col-md-12 col-lg-8 justify-content-lg-center2">
+                  <?php if ($page['mainmenu']): ?>
+                    <div class="menu-block">
+                      <?php print render($page['mainmenu']); ?>
+                    </div>
+                  <?php endif; ?>
+                </div>
+                <?php /*
+<div class="d-lg-flex2 col-6 col-md-4 col-lg-2 justify-content-lg-end">
+<?php if ($page['site_search']): ?>
+<div class="search-block">
+<?php print render($page['site_search']); ?>
+</div>
+<?php endif; ?>
+</div>
+*/ ?>
               </div>
             </div>
           </div>
@@ -42,7 +46,7 @@
       <?php if ($page['main_services_focus']): ?>
         <div class="services-widget-wrap animate__animated animate__flipInX">
           <div class="services-widget-inner-wrap">
-            <div class="container-fluid">
+            <div class="container">
               <?php print render($page['main_services_focus']); ?>
             </div>
           </div>
@@ -215,7 +219,7 @@
         <div class="container">
           <div class="row justify-content-center align-items-end footer-quick-links">
             <?php if ($page['white_logo']): ?>
-              <div class="col-md-3 text-center my-4">
+              <div class="col-6 col-md-3 text-center my-4">
                 <div class="logoarea-white">
                   <?php print render($page['white_logo']); ?>
                 </div>

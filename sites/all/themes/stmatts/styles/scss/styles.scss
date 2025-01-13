@@ -43,7 +43,7 @@ section {
 
     .stickey-header-wrapper {
         // position: absolute;
-        position: relative;
+        // position: relative;
         top: 0;
         left: 0;
         width: 100%;
@@ -183,86 +183,129 @@ section {
 // .outter-padding {
 //     padding: 90px 0px 70px 0px;
 // }
+.stickey-nav-wrap {
+    background: $white;
+    border-bottom: 1px solid $clouds;
 
-.navbar-nav {
-    .menu-block {
-        ul.sf-menu.sf-style-white {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-content: center;
-            float: none;
 
-            li {
-                background: transparent;
-                border-bottom: 2px solid transparent;
-                transition: 0.3s ease;
+    &.stickynav-active {
+        border-bottom: 1px solid $outline;
+        animation: slidein-down .3s ease 0s 1 normal forwards;
+        left: 0;
+    }
 
-                a {
-                    text-decoration: none;
-                    border: none;
-                    font-size: 16px;
-                    color: $primary;
-                    @include font-medium;
-                    transition: 0.3s ease-in;
+    .navbar-nav {
+        .menu-block {
+            ul.sf-menu.sf-style-white {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                float: none;
+
+                li {
                     background: transparent;
-                    box-sizing: border-box;
-                    padding: 0.75em 1.5em;
+                    border-bottom: 2px solid transparent;
                     transition: 0.3s ease;
 
-                    :hover {
-                        color: $secondary;
+                    a {
+                        text-decoration: none;
+                        border: none;
+                        font-size: 16px;
+                        color: $primary;
+                        @include font-medium;
+                        transition: 0.3s ease-in;
                         background: transparent;
-                        outline: 0;
+                        box-sizing: border-box;
+                        padding: 0.75em 1.5em;
+                        transition: 0.3s ease;
+
+                        :hover {
+                            color: $secondary;
+                            background: transparent;
+                            outline: 0;
+                        }
+
+                        .sf-sub-indicator {
+                            right: 0;
+                            background-image: none;
+                            width: 15px;
+                            height: 15px;
+
+                            &::after {
+                                content: "\e69b";
+                                font-family: "Material Symbols Outlined";
+                                font-size: 1em;
+                                position: absolute;
+                                right: 0;
+                                /* color: red; */
+                                /* z-index: 22; */
+                                top: 0;
+                                /* width: 15px; */
+                                /* height: 15px; */
+                                display: block;
+                                text-indent: 0;
+                                overflow: visible;
+                            }
+                        }
+
+
                     }
 
-                    .sf-sub-indicator {
-                        right: 0;
+                    &.active-trail {
+                        border-bottom: 2px solid $secondary;
+
+                        a.menuparent.sf-with-ul {
+                            color: $secondary;
+                            @include font-semibold;
+                        }
+
+                        a.is-active {
+                            color: $secondary;
+                            @include font-semibold;
+                        }
                     }
 
-
-                }
-
-                &.active-trail {
-                    border-bottom: 2px solid $secondary;
-
-                    a.menuparent.sf-with-ul {
-                        color: $secondary;
-                        @include font-semibold;
+                    &:hover {
+                        box-sizing: border-box;
+                        border-bottom: 2px solid $secondary;
                     }
 
-                    a.is-active {
-                        color: $secondary;
-                        @include font-semibold;
-                    }
-                }
+                    ul {
+                        background: $white;
+                        padding: 0px !important;
+                        border-radius: 0px;
+                        border: 1px solid $silver;
 
-                &:hover {
-                    box-sizing: border-box;
-                    border-bottom: 2px solid $secondary;
-                }
+                        li {
+                            padding: 0px;
+                            border-bottom: 1px solid $silver;
 
-                ul {
-                    background: $white;
-                    padding: 0px !important;
-                    border-radius: 0px;
-
-                    li {
-                        padding: 0px;
-                        border-bottom: 1px solid $silver;
-
-                        a {
-                            padding: 20px 1.5em;
-                            box-sizing: border-box;
+                            a {
+                                padding: 20px 1.5em;
+                                box-sizing: border-box;
+                            }
                         }
                     }
                 }
             }
-        }
 
+        }
     }
 }
+
+// @keyframes slidein-down {
+// 	0% {
+// 		opacity: 0;
+// 		transform: translateY(-250px);
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		transform: translateY(0);
+// 	}
+// }
 
 // .menu-block {
 //     ul#superfish-main {
@@ -626,22 +669,22 @@ div#block-matts-primary-local-tasks ul {
         }
 
         .form-actions.form-wrapper {
-            // &:before {
-            //     content: "\e8b6";
-            //     font-family: "Material Symbols Outlined";
-            //     color: $white;
-            //     font-size: 25px;
-            //     position: absolute;
-            //     z-index: 3333;
-            //     width: 30px;
-            //     height: 30px;
-            //     right: 6px;
-            //     display: flex;
-            //     flex-direction: row;
-            //     justify-content: flex-end;
-            //     align-items: center;
-            //     top: 5px;
-            // }
+            &:before {
+                content: "\e8b6";
+                font-family: "Material Symbols Outlined";
+                color: $white;
+                font-size: 22px;
+                position: absolute;
+                z-index: 3333;
+                width: 22px;
+                height: 30px;
+                right: 9px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                top: 5px;
+            }
 
             input[type=submit] {
                 position: absolute;
@@ -654,9 +697,10 @@ div#block-matts-primary-local-tasks ul {
                 color: $white;
                 border-radius: 50px;
                 box-sizing: border-box;
-                width: 80px;
+                // width: 80px;
+                width: 40px;
                 height: 40px;
-                // text-indent: -9999px;
+                text-indent: -9999px;
             }
         }
     }
@@ -1056,7 +1100,7 @@ footer.contentinfo {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 33;
+    z-index: 999;
     width: 45%;
 
     .messages {
@@ -1406,11 +1450,6 @@ nav.pager {
             }
         }
     }
-}
-
-.container-fluid.stickey-nav-wrap {
-    background-color: $white;
-    border-bottom: 1px solid $clouds;
 }
 
 
@@ -2153,4 +2192,75 @@ input[type=reset] {
             }
         }
     }
+}
+
+.view-content.ui-accordion {
+    .views-row {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        .views-field.views-field-title.views-accordion-header {
+            background: $primary;
+            border-radius: 0px;
+            padding: 20px 30px;
+            transition: 0.3s ease;
+
+            span.field-content a {
+                color: $white !important;
+            }
+
+            &:hover {
+                background: $secondary;
+            }
+        }
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding: 10px;
+        border-radius: 0px;
+
+        .views-field.views-field-body .field-content p {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.ui-state-active .ui-icon {
+    background-image: none;
+
+    &:before {
+        content: "\e316" !important;
+        font-family: "Material Symbols Outlined";
+        font-size: 20px;
+        color: $white;
+        text-indent: 0px !important;
+        position: absolute;
+        right: 0;
+        top: -3px;
+    }
+}
+
+.ui-state-default .ui-icon {
+    background-image: none;
+
+    &:before {
+        content: "\e313";
+        font-family: "Material Symbols Outlined";
+        font-size: 20px;
+        color: $white;
+        text-indent: 0px !important;
+        position: absolute;
+        right: 0;
+        top: -3px;
+    }
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    right: 10px !important;
+    left: inherit;
 }

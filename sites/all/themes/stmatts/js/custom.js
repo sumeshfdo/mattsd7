@@ -4,12 +4,23 @@
 //   });
 // })(jQuery);
 
-jQuery(window).load(function(){
+// jQuery(window).load(function () {
 
-     jQuery("#main-nav-bar").sticky({ topSpacing: 0 });
+//    jQuery("#main-nav-bar").sticky({ topSpacing: 0 });
 
+// });
+
+// jQuery(window).load(function () {
+//    jQuery(".loader").fadeOut("slow");
+// })
+
+
+(function ($) {
+  $(window).load(function () {
+    $("#main-nav-bar").sticky({ topSpacing: 0 });
   });
-  
-   jQuery(window).load(function() {
-   jQuery(".loader").fadeOut("slow");
-})
+
+  $(window).load(function () {
+    $(".loader").fadeOut("slow");
+  });
+})(jQuery);
