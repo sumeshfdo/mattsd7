@@ -895,35 +895,33 @@ section.livestreaming-section .social-ico-wrap {
   flex-direction: column;
   justify-content: center;
 }
-section.livestreaming-section .social-ico-wrap .social-ico.fb a {
-  background-image: url("../images/facebook.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  margin: 0 auto;
+section.livestreaming-section .social-ico-wrap .social-ico.fb a svg {
+  background: #92278F;
+  padding: 30px;
   border-radius: 50%;
   text-indent: -9999px;
-  width: 107px;
-  height: 107px;
+  width: 50px;
+  height: 50px;
   border: 3px solid #ffffff;
+  color: #ffffff;
+  transition: 0.3s ease;
 }
-section.livestreaming-section .social-ico-wrap .social-ico.yt a {
-  background-image: url("../images/youtube.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  margin: 0 auto;
+section.livestreaming-section .social-ico-wrap .social-ico.fb a svg:hover {
+  background: #252C6A;
+}
+section.livestreaming-section .social-ico-wrap .social-ico.yt a svg {
+  background: #92278F;
+  padding: 30px;
   border-radius: 50%;
   text-indent: -9999px;
-  width: 107px;
-  height: 107px;
+  width: 50px;
+  height: 50px;
   border: 3px solid #ffffff;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+section.livestreaming-section .social-ico-wrap .social-ico.yt a svg:hover {
+  background: #252C6A;
 }
 
 section.offering-section {
@@ -2285,4 +2283,13 @@ input[type=reset].btn-md {
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
   right: 10px !important;
   left: inherit;
+}
+
+.contact-description-wrapper {
+  background: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+.contact-description-wrapper p:last-child {
+  margin-bottom: 0px;
 }

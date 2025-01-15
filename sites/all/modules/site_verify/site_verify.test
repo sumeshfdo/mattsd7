@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * Tests for the site_verify module.
+ */
+
+/**
+ * Functional tests for Site Verify module.
+ */
+class SiteVerifyFunctionalTestCase extends DrupalWebTestCase {
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function getInfo() {
+    return array(
+      'name' => 'Site verification functional tests',
+      'description' => 'Test site verification functionality.',
+      'group' => 'Site verification',
+    );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function setUp() {
+    parent::setUp(array('site_verify'));
+
+    $user = $this->drupalCreateUser(array('administer site verify'));
+    $this->drupalLogin($user);
+  }
+
+  /**
+   * Linear test of module functions.
+   */
+  public function testMetaTag() {
+    $this->drupalGet('admin/config/search/verifications');
+    $this->assertText('No verifications available.');
+    $this->clickLink('Add verification');
+
+    // Add a dummy Google meta tag.
+    $edit = array('engine' => 'google');
+    $this->drupalPost('admin/config/search/verifications/add', $edit, t('Next'));
+    $verification_code = $this->randomName();
+    $meta_tag = '<meta name="google-site-verification" content="' . $verification_code . '">';
+    $edit = array('meta' => $meta_tag);
+    $this->drupalPost(NULL, $edit, t('Save'));
+    $this->assertText('Verification saved.');
+    $this->assertText('Google');
+
+    // Check if it displays on the front page.
+    $this->drupalGet('<front>');
+    // Check for the specific metatag using xpath.
+    $xpath = $this->xpath("//meta[@name='google-site-verification']");
+    $this->assertEqual(count($xpath), 1, 'Exactly one google verification meta tag found.');
+    $this->assertEqual($xpath[0]['content'], $verification_code, 'Google verification code as specified');
+
+    // Now try to delete it.
+    $this->drupalGet('admin/config/search/verifications');
+    $this->clickLink('Delete');
+    $this->drupalPost(NULL, array(), t('Delete'));
+    $this->assertText('Verification for Google has been deleted.');
+    $this->assertText('No verifications available.');
+  }
+
+}

@@ -880,14 +880,22 @@ section.livestreaming-section {
         flex-direction: column;
         justify-content: center;
 
-        .social-ico.fb a {
-            background-image: url("../images/facebook.svg");
+        .social-ico.fb a svg {
+            // background-image: url("../images/facebook.svg");
             @include socialmedia-icons;
+
+            &:hover {
+                background: $primary;
+            }
         }
 
-        .social-ico.yt a {
-            background-image: url("../images/youtube.svg");
+        .social-ico.yt a svg {
+            // background-image: url("../images/youtube.svg");
             @include socialmedia-icons;
+
+            &:hover {
+                background: $primary;
+            }
         }
     }
 }
@@ -2263,4 +2271,31 @@ input[type=reset] {
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon {
     right: 10px !important;
     left: inherit;
+}
+
+
+// .pace .pace-progress:after {
+//     position: absolute;
+//     @include font-regular;
+//     font-weight: 100;
+//     font-size: 5rem;
+//     line-height: 1;
+//     text-align: center;
+//     color: $primary;
+
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+
+
+.contact-description-wrapper {
+    background: $clouds;
+    padding: 20px;
+    margin-bottom: 60px;
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
 }

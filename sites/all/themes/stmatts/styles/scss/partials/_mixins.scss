@@ -37,18 +37,23 @@
 }
 
 @mixin socialmedia-icons {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    display: block;
-    overflow: hidden;
-    margin: 0 auto;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // text-align: center;
+    // display: block;
+    // overflow: hidden;
+    // margin: 0 auto;
+
+    background: $secondary;
+    padding: 30px;
     border-radius: 50%;
     text-indent: -9999px;
-    width: 107px;
-    height: 107px;
+    width: 50px;
+    height: 50px;
     border: 3px solid $white;
+    color: $white;
+    transition: 0.3s ease;
 }
 
 @mixin btn-common-mixin ($minin-btn-bg: $primary, $minin-after-btn-bg: $secondary, $minin-before-btn-bg: $secondary) {
