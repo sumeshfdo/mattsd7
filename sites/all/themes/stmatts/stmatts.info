@@ -19,6 +19,7 @@ scripts[] = js/custom.js
 
 regions[mainmenu] = Main Menu
 regions[site_search] = Site Search
+regions[topicons] = Top Social Media Icons
 regions[main_slider] = Main Slider
 regions[main_services_focus] = Main services
 regions[welcome] = Welcome Block

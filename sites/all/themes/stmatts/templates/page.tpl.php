@@ -3,6 +3,25 @@
 <div id="page-wrapper">
   <div id="page">
     <div id="main-layout" class="layout-container">
+
+      <div class="top-search-area p-3">
+        <div class="container-xl">
+          <div class="row justify-content-between align-items-center2">
+            <?php if ($page['topicons']): ?>
+              <div class="col-6 col-md-4">
+                <?php print render($page['topicons']); ?>
+              </div>
+            <?php endif; ?>
+
+            <?php if ($page['site_search']): ?>
+              <div class="col-6 col-md-4">
+                <?php print render($page['site_search']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+
       <div class="slide-show-wrapper">
         <div class="stickey-header-wrapper">
           <div class="logo-wrap p-3 mb-2">
@@ -24,14 +43,14 @@
                   <?php endif; ?>
                 </div>
                 <?php /*
-<div class="d-lg-flex2 col-6 col-md-4 col-lg-2 justify-content-lg-end">
-<?php if ($page['site_search']): ?>
-<div class="search-block">
-<?php print render($page['site_search']); ?>
-</div>
-<?php endif; ?>
-</div>
-*/ ?>
+        <div class="d-lg-flex2 col-6 col-md-4 col-lg-2 justify-content-lg-end">
+        <?php if ($page['site_search']): ?>
+        <div class="search-block">
+        <?php print render($page['site_search']); ?>
+        </div>
+        <?php endif; ?>
+        </div>
+        */ ?>
               </div>
             </div>
           </div>
@@ -55,7 +74,7 @@
 
 
       <?php if ($page['welcome']): ?>
-        <section class="outter-padding2 welcome-section">
+        <section class="outter-padding2 welcome-section reveal fade-bottom">
           <div class="container">
             <div class="container-md">
               <?php print render($page['welcome']); ?>
@@ -127,7 +146,7 @@
 
 
       <?php if ($page['upcoming_events'] || $page['news_letters']) { ?>
-        <section class="events-section">
+        <section class="events-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php if ($page['upcoming_events']): ?>
@@ -148,7 +167,7 @@
 
 
       <?php if ($page['timetable']): ?>
-        <section class="timetable-section">
+        <section class="timetable-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php print render($page['timetable']); ?>
@@ -160,7 +179,7 @@
 
 
       <?php if ($page['livestreaming_block']): ?>
-        <section class="livestreaming-section">
+        <section class="livestreaming-section reveal fade-bottom">
           <div class="container p-5">
             <div class="livestreaming-section-wrap">
               <?php print render($page['livestreaming_block']); ?>
@@ -172,7 +191,7 @@
 
 
       <?php if ($page['latest_blog_articles']): ?>
-        <section class="blog-articles-section">
+        <section class="blog-articles-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php print render($page['latest_blog_articles']); ?>
@@ -184,7 +203,7 @@
 
 
       <?php if ($page['offerings_section']): ?>
-        <section class="offering-section">
+        <section class="offering-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php print render($page['offerings_section']); ?>
@@ -195,7 +214,7 @@
 
 
       <?php if ($page['subscribe_section']): ?>
-        <section class="subscribe-section">
+        <section class="subscribe-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php print render($page['subscribe_section']); ?>
@@ -206,7 +225,7 @@
 
 
       <?php if ($page['find_us_section']): ?>
-        <section class="findus-section">
+        <section class="findus-section reveal fade-bottom">
           <div class="container p-5">
             <div class="row">
               <?php print render($page['find_us_section']); ?>
@@ -215,7 +234,7 @@
         </section>
       <?php endif; ?>
 
-      <footer class="contentinfo p-5">
+      <footer class="contentinfo fade-bottom p-5">
         <div class="container">
           <div class="row justify-content-center align-items-end footer-quick-links">
             <?php if ($page['white_logo']): ?>

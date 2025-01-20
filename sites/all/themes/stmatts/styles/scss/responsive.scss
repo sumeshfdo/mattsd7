@@ -6,9 +6,14 @@
 /* New mediaqueries for 2023 */
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .logo-wrap {
+        height: 90px;
+    }
+
     form#mailchimp-signup-subscribe-block-get-in-touch-form {
         width: 80%;
     }
+
     #messages {
         width: 70%;
     }
@@ -110,16 +115,22 @@
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .logo-wrap {
+        height: 90px;
+    }
 
     .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-title {
         font-size: 16px;
     }
+
     .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-type {
         font-size: 13px;
     }
+
     form#mailchimp-signup-subscribe-block-get-in-touch-form {
         width: 90%;
     }
+
     .event-update-wrap {
         border-radius: 10px;
         text-align: center;
@@ -484,7 +495,7 @@
     // responsive menu ends
 
     .search-block {
-        margin-top: 2em;
+        // margin-top: 2em;
     }
 
     .event-update-wrap {

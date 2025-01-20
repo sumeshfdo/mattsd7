@@ -233,7 +233,8 @@
     margin-bottom: 1rem;
 
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+    gap: 20px;
 }
