@@ -1,0 +1,13 @@
+name = Masonry API
+description = "Provides an API for integrating the jQuery Masonry plugin with Drupal."
+core = 7.x
+package = Masonry
+version = 3.x
+dependencies[] = libraries (>=2.x)
+
+
+; Information added by Drupal.org packaging script on 2023-07-21
+version = "7.x-3.0"
+core = "7.x"
+project = "masonry"
+datestamp = "1689933774"

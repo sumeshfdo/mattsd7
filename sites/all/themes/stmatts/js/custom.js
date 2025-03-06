@@ -15,12 +15,12 @@
 // })
 
 
-(function ($) {
-  $(window).load(function () {
-    $("#main-nav-bar").sticky({ topSpacing: 0 });
-  });
+// (function ($) {
+//   $(window).load(function () {
+//     $("#main-nav-bar").sticky({ topSpacing: 0 });
+//   });
 
-})(jQuery);
+// })(jQuery);
 
 
 jQuery(window).load(function () {

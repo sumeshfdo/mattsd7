@@ -173,6 +173,35 @@
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .view-display-id-image_sorter .item-list ul.isotope-options.clearfix li a.filterbutton {
+    padding: 6px 17px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .view-display-id-image_sorter .item-list ul.isotope-options.clearfix {
+    gap: 11px;
+  }
+  .isotope-element {
+    width: 30%;
+  }
+  ul.isotope-container li.isotope-element .views-field.views-field-field-gallery-image .field-content img {
+    border-radius: 10px;
+  }
+  .event-wrap .event-details .event-desc {
+    font-size: 17px;
+  }
+  .event-wrap .event-date .event-date-wrap .event-date-only {
+    font-size: 26px;
+  }
+  footer.contentinfo .logoarea-white img {
+    width: 100%;
+  }
+  .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-time .all-worship-hrs {
+    font-size: 24px;
+  }
+  .html-tabs-wrapper .quicktabs-wrapper.quicktabs-style-basic .quicktabs-tabs > li > a {
+    padding: 1rem 0.5rem;
+  }
   .logo-wrap {
     height: 90px;
   }
@@ -384,6 +413,7 @@
   .slide-show-wrapper .stickey-header-wrapper {
     position: relative !important;
     top: 0px !important;
+    z-index: 9999;
   }
   .logoarea-white {
     text-align: center;

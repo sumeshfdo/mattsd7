@@ -7,9 +7,9 @@
       <div class="top-search-area p-3">
         <div class="container-xl">
           <div class="row justify-content-between align-items-center2">
-            <?php if ($page['topicons']): ?>
+            <?php if ($page['social_media_ico_top']): ?>
               <div class="col-6 col-md-4">
-                <?php print render($page['topicons']); ?>
+                <?php print render($page['social_media_ico_top']); ?>
               </div>
             <?php endif; ?>
 
@@ -43,14 +43,14 @@
                   <?php endif; ?>
                 </div>
                 <?php /*
-        <div class="d-lg-flex2 col-6 col-md-4 col-lg-2 justify-content-lg-end">
-        <?php if ($page['site_search']): ?>
-        <div class="search-block">
-        <?php print render($page['site_search']); ?>
-        </div>
-        <?php endif; ?>
-        </div>
-        */ ?>
+<div class="d-lg-flex2 col-6 col-md-4 col-lg-2 justify-content-lg-end">
+<?php if ($page['site_search']): ?>
+<div class="search-block">
+<?php print render($page['site_search']); ?>
+</div>
+<?php endif; ?>
+</div>
+*/ ?>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             </div>
           <?php endif; ?>
 
-          <div id="main" class="clearfix">
+          <div id="main-duplicate" class="clearfix">
 
             <?php if ($breadcrumb): ?>
               <div id="breadcrumb"><?php print $breadcrumb; ?></div>
@@ -136,7 +136,7 @@
 
       <?php if ($page['related_articles']): ?>
         <div class="related-articles-wrap">
-          <div class="container p-5">
+          <div class="container py-5">
             <div class="row">
               <?php print render($page['related_articles']); ?>
             </div>
@@ -246,8 +246,7 @@
             <?php endif; ?>
           </div>
         </div>
-        <hr>
-        </hr>
+        <hr />
         <div class="container">
           <div class="row align-items-end justify-content-center ">
             <div class="col-md-6 col-lg-6 col-12 copyright-content text-center">

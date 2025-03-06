@@ -1871,6 +1871,7 @@ function t($string, array $args = array(), array $options = array()) {
 function format_string($string, array $args = array()) {
   // Transform arguments before inserting them.
   foreach ($args as $key => $value) {
+/*
     switch ($key[0]) {
       case '@':
         // Escaped only.
@@ -1884,7 +1885,24 @@ function format_string($string, array $args = array()) {
         break;
 
       case '!':
-        // Pass-through.
+        // Pass-through. 
+*/
+    if (!empty($key[0])) {
+      switch ($key[0]) {
+        case '@':
+          // Escaped only.
+          $args[$key] = check_plain($value);
+          break;
+
+        case '%':
+        default:
+          // Escaped and placeholder.
+          $args[$key] = drupal_placeholder($value);
+          break;
+
+        case '!':
+          // Pass-through.
+      }
     }
   }
   return strtr($string, $args);
