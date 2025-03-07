@@ -1,26 +1,31 @@
 @mixin font-light {
     font-family: 'Poppins-Light', sans-serif !important;
     font-weight: 300 !important;
+    font-style: normal;
 }
 
 @mixin font-regular {
     font-family: 'Poppins-Regular', sans-serif !important;
     font-weight: normal !important;
+    font-style: normal;
 }
 
 @mixin font-medium {
     font-family: 'Poppins-Medium', sans-serif !important;
     font-weight: 500 !important;
+    font-style: normal;
 }
 
 @mixin font-semibold {
     font-family: 'Poppins-SemiBold', sans-serif !important;
     font-weight: 600 !important;
+    font-style: normal;
 }
 
 @mixin font-bold {
     font-family: 'Poppins-Bold', sans-serif !important;
     font-weight: 700 !important;
+    font-style: normal;
 }
 
 @mixin horizontally-align {

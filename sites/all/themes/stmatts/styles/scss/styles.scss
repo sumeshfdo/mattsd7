@@ -2631,7 +2631,7 @@ ul.isotope-container {
 
 .tinner {
     height: auto !important;
-    border: 4px solid #e74c3c;
+    border: 4px solid $error;
     border-radius: 10px;
 
     .splash-screen-wrap {
@@ -2651,7 +2651,7 @@ ul.isotope-container {
         }
 
         .s-body {
-            border: 1px solid #e74c3c;
+            border: 1px solid $error;
             padding: 20px;
             border-radius: 5px;
 
@@ -2664,7 +2664,7 @@ ul.isotope-container {
 
 .view-id-splash_screen {
     .splash-screen-wrap {
-        border: 5px solid #e74c3c;
+        border: 5px solid $error;
         padding: 20px;
         text-align: center;
         border-radius: 10px;
@@ -2683,7 +2683,7 @@ ul.isotope-container {
         }
 
         .s-body {
-            border: 1px solid #e74c3c;
+            border: 1px solid $error;
             padding: 20px;
             border-radius: 5px;
 
@@ -2692,4 +2692,53 @@ ul.isotope-container {
             }
         }
     }
+}
+
+
+.card.lent-cal {
+    height: 400px !important;
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    a {
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover {
+        border-color: $secondary;
+    }
+}
+
+.special_notices_area {
+    background-image: url("../images/lantern-calandar.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .sp-notice {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 50px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+
+        .main-title {
+            font-weight: 500;
+            font-size: 32px;
+            color: $primary;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            font-weight: normal;
+            color: $primary;
+            margin-top: 16px;
+        }
+    }
+
 }

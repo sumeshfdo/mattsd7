@@ -109,6 +109,7 @@ h2 {
   color: #252C6A;
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
 }
 
 section {
@@ -231,6 +232,7 @@ section {
 .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-description .service-name {
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
   font-size: 20px;
 }
 .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-time {
@@ -241,11 +243,13 @@ section {
 .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-time .service-time {
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
   font-size: 28px;
 }
 .services-widget-wrap .services-widget-inner-wrap .main-services-widget .main-service-time .service-am-pm {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   font-size: 20px;
 }
 
@@ -278,6 +282,7 @@ section {
   color: #252C6A;
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
   transition: 0.3s ease-in;
   background: transparent;
   box-sizing: border-box;
@@ -317,11 +322,13 @@ section {
   color: #92278F;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 .stickey-nav-wrap .navbar-nav .menu-block ul.sf-menu.sf-style-white li.active-trail a.is-active {
   color: #92278F;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 .stickey-nav-wrap .navbar-nav .menu-block ul.sf-menu.sf-style-white li:hover {
   box-sizing: border-box;
@@ -350,6 +357,7 @@ section {
 .welcome-inner-wrap .welcome {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   margin-bottom: 25px;
   font-size: 20px;
   color: #92278F;
@@ -363,6 +371,7 @@ section {
   margin-bottom: 0px;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 .welcome-inner-wrap .holland-park {
   position: relative;
@@ -373,6 +382,7 @@ section {
   background: #ffffff;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 20px;
   display: inline-block;
   padding: 0 10px;
@@ -403,12 +413,14 @@ section.events-section {
   color: #ffffff;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 
 .blue-header h2 {
   color: #252C6A;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 
 .event-wrap:first-child {
@@ -431,18 +443,21 @@ section.events-section {
   color: #ffffff;
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
 }
 .event-wrap .event-date .event-date-wrap .event-month {
   color: #ffffff;
   font-size: 14px;
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
 }
 .event-wrap .event-date .event-date-wrap .event-time {
   font-size: 14px;
   color: #ffffff;
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
 }
 .event-wrap .event-details {
   background: #F1C40F;
@@ -455,6 +470,7 @@ section.events-section {
   font-size: 18px;
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
   color: #252C6A;
 }
 
@@ -477,6 +493,7 @@ input2.button2.btn-primary {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   color: #ffffff;
@@ -528,6 +545,7 @@ input2.button2.btn-primary.btn-xl {
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 a.btn.btn-primary.btn-md, a.button2.btn-primary.btn-md,
@@ -536,6 +554,7 @@ input2.button2.btn-primary.btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 a.btn.btn-secondary, a.button2.btn-secondary,
 input2.btn.btn-secondary,
@@ -546,6 +565,7 @@ input2.button2.btn-secondary {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   color: #ffffff;
@@ -597,6 +617,7 @@ input2.button2.btn-secondary.btn-xl {
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 a.btn.btn-secondary.btn-md, a.button2.btn-secondary.btn-md,
@@ -605,6 +626,7 @@ input2.button2.btn-secondary.btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 .download-file {
@@ -633,6 +655,7 @@ input2.button2.btn-secondary.btn-md {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   padding: 0.65rem 1.8rem;
   text-decoration: none;
   display: inline-block;
@@ -786,6 +809,7 @@ div#block-matts-primary-local-tasks ul li a {
   color: #252C6A;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 .news-letter-wrap .news-letter-content .news-letter-title {
   font-size: 14px;
@@ -828,17 +852,20 @@ div#block-matts-primary-local-tasks ul li a {
 .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-title {
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
   font-size: 20px;
 }
 .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-type {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   font-size: 16px;
 }
 .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-venue {
   font-size: 13px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-description .worship-venue:empty {
   display: none;
@@ -855,6 +882,7 @@ div#block-matts-primary-local-tasks ul li a {
 .all-worship-times-outter-wrap .all-worship-times-wrap .all-worship-time .all-worship-hrs {
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
   font-size: 32px;
   color: #252C6A;
 }
@@ -891,6 +919,7 @@ section.livestreaming-section .title-2 h3 {
 section.livestreaming-section .basic-title {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -898,6 +927,7 @@ section.livestreaming-section .title-1 h3,
 section.livestreaming-section .title-2 h3 {
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 32px;
 }
 section.livestreaming-section .social-ico-wrap {
@@ -998,6 +1028,7 @@ footer.contentinfo .privacy-policy {
   color: #ffffff;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 footer.contentinfo hr {
   border-color: #181E53 !important;
@@ -1190,6 +1221,7 @@ footer.contentinfo .logoarea-white img {
   font-size: 17px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   color: #252C6A;
 }
 
@@ -1235,6 +1267,7 @@ footer.contentinfo .logoarea-white img {
   font-size: 36px;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   line-height: 48px;
 }
 .event-update-wrap .event-date .event-date-wrap .event-month {
@@ -1283,6 +1316,7 @@ footer.contentinfo .logoarea-white img {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   color: #ffffff;
@@ -1324,12 +1358,14 @@ footer.contentinfo .logoarea-white img {
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 .event-view-btn a.btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 .event-time-wrap {
@@ -1439,6 +1475,7 @@ nav.pager ul li.pager__item.is-active a:hover {
   color: #7f8c8d;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   font-size: 18px !important;
 }
 
@@ -1452,6 +1489,7 @@ nav.pager ul li.pager__item.is-active a:hover {
   margin-bottom: 15px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 .bank-details-wrapper .bd-wrap {
   border: 1px solid #bdc3c7;
@@ -1521,6 +1559,7 @@ body.path-not-frontpage-user section.ftco-section .wrap .login-wrap h3 {
   font-weight: 300;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 body.path-not-frontpage-user section.ftco-section .wrap .login-wrap input#edit-submit {
   background: #252C6A;
@@ -1529,6 +1568,7 @@ body.path-not-frontpage-user section.ftco-section .wrap .login-wrap input#edit-s
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   color: #ffffff;
@@ -1571,12 +1611,14 @@ body.path-not-frontpage-user section.ftco-section .wrap .login-wrap input#edit-s
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 body.path-not-frontpage-user section.ftco-section .wrap .login-wrap input#edit-submit.btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 body.path-not-frontpage-user section.ftco-section .wrap .login-wrap .signin-form .js-form-item.form-item-name,
 body.path-not-frontpage-user section.ftco-section .wrap .login-wrap .signin-form .js-form-item.form-item-pass {
@@ -1660,6 +1702,7 @@ input#edit-captcha-response:active, input#edit-captcha-response:hover, input#edi
 .footer-quick-links h4.footer-menu-header {
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
   color: #ffffff;
   margin-bottom: 48px;
   font-size: 20px;
@@ -1671,6 +1714,7 @@ input#edit-captcha-response:active, input#edit-captcha-response:hover, input#edi
 .footer-quick-links .footer-link-row a {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -1687,6 +1731,7 @@ input.btn-outlined {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   padding: 0.5rem 1.2rem;
   color: #252C6A;
   transition: ease-out 0.3s;
@@ -1704,12 +1749,14 @@ input.btn-outlined.btn-xl {
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 input.btn-outlined.btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 label.js-form-required.form-required:after {
@@ -1722,6 +1769,7 @@ input.button.button--primary,
 #search-block-form input.button.form-submit {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   border: none;
   padding: 0.5rem 1.2rem;
   display: inline-block;
@@ -1746,6 +1794,7 @@ input.button.button--primary.btn-xl,
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 input.button.button--primary.btn-md,
@@ -1753,6 +1802,7 @@ input.button.button--primary.btn-md,
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 .related-article-wrap header {
@@ -1816,6 +1866,7 @@ input.button.button--primary.btn-md,
   color: #252C6A;
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
 }
 .related-article-wrap .flexslider ul.slides li .card.relates-articles:hover {
   background: #252C6A;
@@ -1876,6 +1927,7 @@ input.button.button--primary.btn-md,
   font-size: 40px;
   font-family: "Poppins-Bold", sans-serif !important;
   font-weight: 700 !important;
+  font-style: normal;
   text-shadow: 0px 1px 0px #ffffff;
   color: #252C6A;
 }
@@ -1892,12 +1944,14 @@ input.button.button--primary.btn-md,
   margin-bottom: 20px;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 .get-in-touch h4 {
   color: #252C6A;
   margin-bottom: 10px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 form#mailchimp-signup-subscribe-block-get-in-touch-form {
@@ -1939,6 +1993,7 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form input.form-submit {
   font-size: 16px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 form#mailchimp-signup-subscribe-block-get-in-touch-form .form-item.form-type-textfield.form-item-mergevars-EMAIL {
   margin: 0 auto;
@@ -1955,6 +2010,7 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form .form-item.form-type-tex
   font-size: 17px;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   color: #7f8c8d;
   text-decoration: none;
   transition: 0.3s ease;
@@ -1965,6 +2021,7 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form .form-item.form-type-tex
 .breadcrumb span.inline.last {
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
 }
 
 .uce-wrapper .uce-date,
@@ -2024,6 +2081,7 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form .form-item.form-type-tex
   display: block;
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
 }
 .webform-client-form.webform-client-form-32 .form-item.webform-component input,
 .webform-client-form.webform-client-form-32 .form-item.webform-component select,
@@ -2059,6 +2117,7 @@ input[type=submit],
 input[type=reset] {
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   border: none;
   padding: 0.5rem 1.2rem;
   display: inline-block;
@@ -2085,6 +2144,7 @@ input[type=reset].btn-xl {
   padding: 0.75rem 2.5rem;
   font-family: "Poppins-SemiBold", sans-serif !important;
   font-weight: 600 !important;
+  font-style: normal;
   font-size: 19px;
 }
 input[type=button].btn-md,
@@ -2093,6 +2153,7 @@ input[type=reset].btn-md {
   padding: 0.65rem 1.8rem;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 
 .page-search form#search-form {
@@ -2149,6 +2210,7 @@ input[type=reset].btn-md {
   text-align: center;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
   color: #252C6A;
 }
 .page-search form#search-form a#edit-help-link {
@@ -2160,6 +2222,7 @@ input[type=reset].btn-md {
 .page-search h2 {
   font-family: "Poppins-Medium", sans-serif !important;
   font-weight: 500 !important;
+  font-style: normal;
   margin-top: 50px;
   margin-bottom: 50px;
   display: block;
@@ -2268,6 +2331,7 @@ input[type=reset].btn-md {
   color: #000000;
   font-family: "Poppins-Regular", sans-serif !important;
   font-weight: normal !important;
+  font-style: normal;
 }
 .view-content.ui-accordion .views-row .ui-accordion-content .views-field.views-field-body .field-content p:last-child {
   margin-bottom: 0px;
@@ -2537,6 +2601,7 @@ ul.isotope-container li.isotope-element .views-field.views-field-field-gallery-i
   background-color: #252C6A;
   box-shadow: inset 400px 0 0 0 #92278F;
 }
+
 .tinner {
   height: auto !important;
   border: 4px solid #e74c3c;
@@ -2589,4 +2654,45 @@ ul.isotope-container li.isotope-element .views-field.views-field-field-gallery-i
 }
 .view-id-splash_screen .splash-screen-wrap .s-body p:last-child {
   margin-bottom: 0px;
+}
+
+.card.lent-cal {
+  height: 400px !important;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.card.lent-cal a {
+  height: 100%;
+}
+.card.lent-cal a img {
+  width: 100%;
+  height: 100%;
+}
+.card.lent-cal:hover {
+  border-color: #92278F;
+}
+
+.special_notices_area {
+  background-image: url("../images/lantern-calandar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.special_notices_area .sp-notice {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+}
+.special_notices_area .sp-notice .main-title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #252C6A;
+}
+.special_notices_area .sp-notice .sub-title {
+  font-size: 20px;
+  font-weight: normal;
+  color: #252C6A;
+  margin-top: 16px;
 }

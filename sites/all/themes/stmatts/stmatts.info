@@ -23,6 +23,7 @@ regions[social_media_ico_top] = Social Media Ico Top
 regions[main_slider] = Main Slider
 regions[main_services_focus] = Main services
 regions[welcome] = Welcome Block
+regions[special_notices_area] = Special Notices
 regions[content] = Content
 regions[related_articles] = Related Articles
 regions[upcoming_events] = Upcoming Events

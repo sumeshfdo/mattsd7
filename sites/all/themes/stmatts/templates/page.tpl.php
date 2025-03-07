@@ -83,6 +83,18 @@
         </section>
       <?php endif; ?>
 
+
+      <?php if ($page['special_notices_area']): ?>
+        <section class="outter-padding2 special_notices_area reveal fade-bottom">
+          <div class="container">
+            <div class="container-md">
+              <?php print render($page['special_notices_area']); ?>
+            </div>
+          </div>
+        </section>
+      <?php endif; ?>
+
+
       <div class="main-title-wrap">
         <div class="container text-center">
           <?php if ($title): ?>
