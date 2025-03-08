@@ -12,13 +12,18 @@
     -webkit-font-smoothing: antialiased;
 }
 
+#admin-menu {
+    z-index: 9999 !important;
+}
+
 a {
     color: $petertiver;
     text-decoration: none;
 }
 
 .h2,
-h2 {
+h2,
+.notice-title h2 {
     font-size: 32px !important;
     color: $primary;
     @include font-bold;
@@ -1866,10 +1871,10 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form {
     position: relative;
     width: 50%;
     margin: 0 auto;
-    height: 55px;
+    height: 170px;
 
     .mailchimp-newsletter-mergefields {
-        position: absolute;
+        // position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -1910,6 +1915,15 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form {
 
         input#edit-mergevars-email {}
     }
+
+    .captcha {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
 }
 
 
@@ -2741,4 +2755,68 @@ ul.isotope-container {
         }
     }
 
+}
+
+.card.noticeboard-card {
+    overflow: hidden;
+    position: relative;
+
+    .latest-badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        a {
+            background: url(../images/megaphone.png) transparent no-repeat;
+            display: block;
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+            color: transparent;
+            background-position: center;
+            position: absolute;
+            background-color: $orange;
+            border-radius: 50%;
+            transition: 0.3s ease;
+            overflow: visible;
+        }
+    }
+
+
+    a {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.3s ease;
+                filter: saturate(0.5);
+            }
+        }
+    }
+
+    .card-body {
+        h5.card-title {
+            margin-bottom: 20px;
+
+            a {
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+small.text-muted em.placeholder {
+    background: transparent;
+    font-style: normal;
+    min-height: auto;
+    opacity: 1;
+    line-height: normal;
+    vertical-align: initial;
+    cursor: default;
 }
