@@ -16,6 +16,14 @@
     z-index: 9999 !important;
 }
 
+body {
+
+    &.toolbar-drawer,
+    &.toolbar {
+        padding-top: 0em !important;
+    }
+}
+
 a {
     color: $petertiver;
     text-decoration: none;
@@ -49,6 +57,14 @@ section {
     }
 }
 
+.top-search-area {
+    background: $top-search1;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $top-search2, $top-search1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $top-search2, $top-search1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .slide-show-wrapper {
     position: relative;
@@ -1829,11 +1845,14 @@ input.button.button--primary,
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-image: url(./../images/pg-header-bg.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
+        // background-image: url(./../images/pg-header-bg.png);
+        // background-repeat: no-repeat;
+        // background-attachment: fixed;
+        // background-position: center center;
+        // background-size: cover;
+        background: #00c6ff;
+        background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+        background: linear-gradient(to right, #0072ff, #00c6ff);
 
         h1 {
             margin-bottom: 0;
@@ -2757,55 +2776,74 @@ ul.isotope-container {
 
 }
 
-.card.noticeboard-card {
-    overflow: hidden;
+.notice-wrapper {
     position: relative;
 
-    .latest-badge {
+    .notice-pin {
+        background: url(../images/pin.png) transparent no-repeat;
+        width: 50px;
+        height: 50px;
         position: absolute;
-        top: 10px;
-        left: 10px;
+        right: 0;
+        left: 0;
+        top: -25px;
+        z-index: 3;
+        margin-left: auto;
+        margin-right: auto;
 
-        a {
-            background: url(../images/megaphone.png) transparent no-repeat;
-            display: block;
-            background-size: contain;
-            width: 50px;
-            height: 50px;
-            color: transparent;
-            background-position: center;
-            position: absolute;
-            background-color: $orange;
-            border-radius: 50%;
-            transition: 0.3s ease;
-            overflow: visible;
-        }
     }
 
-
-    a {
+    .card.noticeboard-card {
         overflow: hidden;
+        position: relative;
 
-        img {
-            width: 100%;
-            height: auto;
-            transition: 0.3s ease;
-
-            &:hover {
-                transform: scale(1.2);
-                transition: 0.3s ease;
-                filter: saturate(0.5);
-            }
-        }
-    }
-
-    .card-body {
-        h5.card-title {
-            margin-bottom: 20px;
+        .latest-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
 
             a {
-                color: $primary;
-                text-decoration: none;
+                background: url(../images/megaphone.png) transparent no-repeat;
+                display: block;
+                background-size: contain;
+                width: 50px;
+                height: 50px;
+                color: transparent;
+                background-position: center;
+                position: absolute;
+                background-color: $orange;
+                border-radius: 50%;
+                transition: 0.3s ease;
+                overflow: visible;
+                text-indent: -9999px;
+            }
+        }
+
+
+        a {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                transition: 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.3s ease;
+                    filter: saturate(0.5);
+                }
+            }
+        }
+
+        .card-body {
+            h5.card-title {
+                margin-bottom: 20px;
+
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                }
             }
         }
     }

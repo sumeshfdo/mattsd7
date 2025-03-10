@@ -24,7 +24,7 @@
 
       <div class="slide-show-wrapper">
         <div class="stickey-header-wrapper">
-          <div class="logo-wrap p-3 mb-2">
+          <div class="logo-wrap p-3 mt-5 mb-3">
             <?php if ($logo): ?>
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                 <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
