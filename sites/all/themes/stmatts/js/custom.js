@@ -23,8 +23,18 @@
 // })(jQuery);
 
 
+// (function ($) {
+//   $(window).on('load', function () {
+//     $("#loader-x").delay(2000).fadeOut("slow");
+//   });
+// })(jQuery);
+
+// $(window).load(function () {
+//   $('#loader-x').delay(2000).fadeOut("slow");
+// });
+
 jQuery(window).load(function () {
-  jQuery(".loader").fadeOut("slow");
+  jQuery("#loader-x").delay(2000).fadeOut("slow");
 })
 
 

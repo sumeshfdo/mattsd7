@@ -12,6 +12,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
+
 #admin-menu {
     z-index: 9999 !important;
 }
@@ -736,14 +737,16 @@ div#block-matts-primary-local-tasks ul {
     }
 }
 
-.loader {
+.loader-x {
+    display: block;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(../images/page-loader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+    background: url(../images/matts-loader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+    background-size: 263px 100px;
 }
 
 .news-letter-wrap {
@@ -2837,6 +2840,10 @@ ul.isotope-container {
         }
 
         .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             h5.card-title {
                 margin-bottom: 20px;
 

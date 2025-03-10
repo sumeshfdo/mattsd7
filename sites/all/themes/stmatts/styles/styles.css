@@ -797,14 +797,16 @@ div#block-matts-primary-local-tasks ul li a {
   text-indent: -9999px;
 }
 
-.loader {
+.loader-x {
+  display: block;
   position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/page-loader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+  background: url(../images/matts-loader.gif) 50% 50% no-repeat rgb(249, 249, 249);
+  background-size: 263px 100px;
 }
 
 .news-letter-wrap {
@@ -2771,6 +2773,11 @@ ul.isotope-container li.isotope-element .views-field.views-field-field-gallery-i
   transform: scale(1.2);
   transition: 0.3s ease;
   filter: saturate(0.5);
+}
+.notice-wrapper .card.noticeboard-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .notice-wrapper .card.noticeboard-card .card-body h5.card-title {
   margin-bottom: 20px;
