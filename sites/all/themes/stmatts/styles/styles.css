@@ -141,12 +141,7 @@ section {
 }
 
 .top-search-area {
-  background: #E0EAFC;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to top, #f1f4fc 0%, #eef1f5 100%);
 }
 
 .slide-show-wrapper {
@@ -2112,10 +2107,10 @@ form#mailchimp-signup-subscribe-block-get-in-touch-form .captcha {
 .webform-client-form.webform-client-form-32 .form-item.webform-component select,
 .webform-client-form.webform-client-form-32 .form-item.webform-component textarea {
   border: 1px solid #7f8c8d;
-  padding: 10px;
+  padding: 1rem;
   font-size: 18px;
   color: #000000;
-  border-radius: 0px;
+  border-radius: 10px;
   width: 100%;
   transition: 0.3s ease;
 }
@@ -2795,4 +2790,32 @@ small.text-muted em.placeholder {
   line-height: normal;
   vertical-align: initial;
   cursor: default;
+}
+
+.node-type-notices .main-page-content .field-name-field-notice-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.notice-related .card {
+  overflow: hidden;
+}
+.notice-related .card a img {
+  width: 100%;
+  height: auto;
+}
+.notice-related .card .card-body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.notice-related .card .card-body h5.card-title a {
+  text-decoration: none;
+  color: #92278F;
+  transition: 0.3s ease;
+}
+.notice-related .card .card-body h5.card-title a:hover {
+  color: #252C6A;
+  cursor: pointer;
+  text-decoration: none;
 }
