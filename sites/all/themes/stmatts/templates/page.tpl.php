@@ -258,13 +258,11 @@
       <footer class="contentinfo fade-bottom p-5">
         <div class="container">
           <div class="row justify-content-center align-items-end footer-quick-links">
-            <?php if ($page['white_logo']): ?>
               <div class="col-6 col-md-3 text-center my-4">
-                <div class="logoarea-white">
-                  <?php print render($page['white_logo']); ?>
+                <div class="logoarea-white white-logo">
+                  <img alt="st matts" src="<?php print base_path( )?><?php print path_to_theme() ?>/images/white-logo.png" />
                 </div>
               </div>
-            <?php endif; ?>
           </div>
         </div>
         <hr />
